@@ -11,7 +11,16 @@ class BMICalculator extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        primaryColor: Colors.red,
+        primaryColor: const Color(0xFF0A0E21),
+        scaffoldBackgroundColor: const Color(0xFF0A0E21),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xFF0A0E21),
+        ),
+        textTheme: const TextTheme(
+          bodyMedium: TextStyle(
+            color: Color(0xFFFFFFFF),
+          ),
+        ),
       ),
       home: const InputPage(),
     );
@@ -30,12 +39,12 @@ class _InputPageState extends State<InputPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('BMI Calculator'),
+        title: const Text('BMI Calculator'),
       ),
-      body: Center(
+      body: const Center(
         child: Text('Body Text'),
       ),
-      floatingActionButton: FloatingActionButton(
+      floatingActionButton: const FloatingActionButton(
         onPressed: null,
         child: Icon(Icons.add),
       ),
