@@ -26,6 +26,7 @@ class _InputPageState extends State<InputPage> {
         title: const Text('BMI Calculator'),
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Expanded(
             child: Row(
@@ -68,6 +69,22 @@ class _InputPageState extends State<InputPage> {
           const Expanded(
             child: ReusableCard(
               colour: kActiveCardColor,
+              cardChild: Column(
+                children: [
+                  Text(
+                    'HEIGHT',
+                    style: kLabelTextStyle,
+                  ),
+                  Row(
+                    children: [
+                      Text(
+                        '54',
+                        style: kLabelNumberStyle,
+                      )
+                    ],
+                  )
+                ],
+              ),
             ),
           ),
           const Expanded(
