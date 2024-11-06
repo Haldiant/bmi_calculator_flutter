@@ -38,8 +38,8 @@ class _InputPageState extends State<InputPage> {
                       });
                     },
                     colour: selectedGender == Gender.male
-                        ? activeCardColor
-                        : inactiveCardColor,
+                        ? kActiveCardColor
+                        : kInactiveCardColor,
                     cardChild: const IconContent(
                       label: 'MALE',
                       icon: FontAwesomeIcons.mars,
@@ -54,8 +54,8 @@ class _InputPageState extends State<InputPage> {
                       });
                     },
                     colour: selectedGender == Gender.female
-                        ? activeCardColor
-                        : inactiveCardColor,
+                        ? kActiveCardColor
+                        : kInactiveCardColor,
                     cardChild: const IconContent(
                       label: 'FEMALE',
                       icon: FontAwesomeIcons.venus,
@@ -67,7 +67,7 @@ class _InputPageState extends State<InputPage> {
           ),
           const Expanded(
             child: ReusableCard(
-              colour: activeCardColor,
+              colour: kActiveCardColor,
             ),
           ),
           const Expanded(
@@ -75,22 +75,22 @@ class _InputPageState extends State<InputPage> {
               children: [
                 Expanded(
                   child: ReusableCard(
-                    colour: activeCardColor,
+                    colour: kActiveCardColor,
                   ),
                 ),
                 Expanded(
                   child: ReusableCard(
-                    colour: activeCardColor,
+                    colour: kActiveCardColor,
                   ),
                 ),
               ],
             ),
           ),
           Container(
-            color: bottomButtonColor,
+            color: kBottomButtonColor,
             margin: const EdgeInsets.only(top: 10.0),
             width: double.infinity,
-            height: bottomContainerButton,
+            height: kBottomContainerButton,
           ),
         ],
       ),
